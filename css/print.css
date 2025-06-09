@@ -1,0 +1,103 @@
+/* 
+Style sheet for print-friendly version of all web pages. 
+Unused rules have been deleted.
+*/
+
+* {
+  background-color: white;
+}
+
+/* Uniform style for heading- appears on each page */
+header {
+  font-size: x-large;
+  text-align: center;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Formatting and style for Navigation Bar */
+.horizontalNav {
+  font-size: x-large;
+  text-align: center;
+  font-family: Courier, "Free Mono", monospace;
+  margin: 8px;
+}
+
+/* Removes horizontal navigation bar, but preserves the text of the link of
+the current page for user reference */
+.horizontalNav {
+  display: none;
+}
+
+/* Colours all link text black for uniformity */
+a {
+  color: black;
+}
+
+/* Removes all images except logo */
+img:not(.logo) {
+  display: none;
+}
+
+/* Style for text introducing a page's content */
+.subheading {
+  font-weight: 500;
+  font-size: 1.75em;
+  font-family: Didot, Bookman, serif;
+  padding-top: 1.5em;
+}
+
+/* Removes all buttons */
+.notPrintFriendly {
+  display: none;
+}
+
+/* Bullet points */
+ol {list-style-type: upper-roman;}
+ol ol {list-style-type: lower-roman;}
+ul {
+  list-style-type: square;
+  text-align: left;
+}
+   
+/* Footer containing links to personal info, disclaimers */
+footer {
+  font-size: 1em;
+}
+
+/* Rules for index.html */
+#slogan {
+  font-size: x-large;
+  color: black;
+  font-family: "American Typewriter", "New Century Schoolbook", serif;
+}
+#slogan span:nth-of-type(2) {
+  display: block;
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+/* Rules for SB_A3_resume.html */
+
+table{
+  font-size: large;
+  border-collapse: collapse;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+th, td {
+  border: thin solid;
+  padding: 6px;
+  text-align: center;
+}
+
+/* Rules for SB_A3_web_skills.html */
+
+.previousRole {
+  text-decoration: underline overline;
+  color: black;
+}
+

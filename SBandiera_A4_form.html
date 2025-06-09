@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Steven Bandiera">
+    <!-- 
+      Authored by Steven Bandiera on 09/06/2025 
+      Descriptions and links to contributions to previous projects. 
+    -->
+    <title>Steven Bandiera Portfolio: Web Skills</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <link rel="icon" href="./images/computerIcon.png">
+    <script src="./javascript/form_script.js"></script> 
+  </head>
+  
+  <body>
+    <!-- This header is common on all pages -->
+    <header>
+      <img class="logoLeft" src="./images/logo.png" alt="SB Logo">
+      <img class="logoRight" src="./images/logo.png" alt="SB Logo">    
+        <h1>
+          Steven Bandiera<br>
+          <small>Professional Portfolio</small>
+        </h1>
+    </header>
+
+    <!-- Horizontal navigation between pages -->
+    <nav class="horizontalNav">
+      <a href="index.html">Home</a> 
+      <a href="SBandiera_A4_resume.html">Resume</a> 
+      <a href="SBandiera_A4_cybersecurity.html">Cybersecurity</a> 
+      <a id="currentPageLink" href="SBandiera_A4_web_skills.html">Web Skills</a>
+      <a href="SBandiera_A4_cloud_integration.html">Cloud Integration</a>
+      <a href="SBandiera_A4_networks.html">Computer Networks</a>
+    </nav>
+    <br>
+    <br>
+    
+    <!-- simple form asking for details to sign up toi newsletter -->
+    <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" 
+          method="post" 
+          onsubmit="return validateForm(this)">
+      
+    <!-- First name field -->  
+      <label>
+      <span class="formInstruction">Enter your first name:</span><br>
+      <input type="text" 
+             name="first-name" 
+             id="first-name" 
+             placeholder="First Name" 
+             size="60" 
+             maxlength="60">
+      </label>
+      <br>
+      <br>
+      
+      <!-- Last name field -->
+      <label>
+      <span class="formInstruction">Enter your last name:</span><br>
+      <input type="text" 
+             name="last-name" 
+             id="last-name" 
+             placeholder="Last Name" 
+             size="60" 
+             maxlength="60">
+      </label>
+      <br>
+      <br>
+      
+      <!-- Email field -->
+      <label>
+        <span class="formInstruction">Enter your email:</span><br>
+        <input type="email" 
+               name="email" 
+               id="email" 
+               placeholder="Email" 
+               size="60" 
+               maxlength="60">
+      </label>
+      <br>
+      <br>
+      
+      <!-- Age range radio buttons -->
+      <span class="formInstruction">Select age range:</span><br>
+      <label>
+        <input type="radio" 
+               name="age-range" 
+               value="15-25">
+               15-25
+      </label>
+      <br>
+      <label>
+        <input type="radio" 
+               name="age-range" 
+               value="26-35">
+               26-35
+      </label>
+      <br>
+      <label>
+        <input type="radio" 
+               name="age-range" 
+               value="36-45">
+               36-45
+      </label>
+      <br>
+      <label>
+        <input type="radio" 
+               name="age-range" 
+               value="46-55">
+               46-55
+      </label>
+      <br>
+      <label>
+        <input type="radio" 
+               name="age-range" 
+               value="55+">
+               55+
+      </label>
+      <br>
+      <br>
+      
+      <!-- Checkboxes for areas of expertise -->
+      <span class="formInstruction">Select area of expertise (select all that apply):</span><br>
+      <label>
+        <input type="checkbox" 
+               name="sector" 
+               value="exploration">
+               Exploration
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" 
+               name="sector" 
+               value="operations">
+               Operations
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" 
+               name="sector" 
+               value="processing">
+               Processing
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" 
+               name="sector" 
+               value="logistics">
+               Logistics
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" 
+               name="sector" 
+               value="information technology">
+               Information Technology
+      </label>
+      <br>
+      <br>
+      
+      <!-- Text box for optional comments or details -->
+      <label>
+        <span class="formInstruction">Provide additional details about yourself:</span><br>
+        <textarea name="personal-details" 
+                  id="personal-details" 
+                  rows="3" 
+                  cols="60">
+                  Personal details
+        </textarea>
+      </label>
+      <br>
+      <br>
+      
+      <input type="submit" 
+             id="submit" 
+             value="Submit">
+
+      <input type="reset" 
+             id="reset" 
+             value="Reset">
+      
+    </form>
+      
+  </body>

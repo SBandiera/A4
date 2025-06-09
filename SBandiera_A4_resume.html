@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Steven Bandiera">
+    <!-- 
+      Authored by Steven Bandiera on 09/06/2025 
+      Resume detailing education, experience, interests.
+    -->
+    <title>Steven Bandiera Portfolio: Resume</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <link rel="icon" href="./images/computerIcon.png">
+  </head>
+  
+  <body>
+    <!-- This header is common on all pages -->
+    <header>
+      <img class="logoLeft" src="./images/logo.png" alt="SB Logo">
+      <img class="logoRight" src="./images/logo.png" alt="SB Logo">    
+        <h1>
+          Steven Bandiera<br>
+          <small>Professional Portfolio</small>
+        </h1>
+    </header>
+    
+    <!-- Horizontal navigation between pages -->
+    <nav class="horizontalNav">
+      <a href="index.html">Home</a> 
+      <a id="currentPageLink" href="SBandiera_A4_resume.html">Resume</a> 
+      <a href="SBandiera_A4_cybersecurity.html">Cybersecurity</a> 
+      <a href="SBandiera_A4_web_skills.html">Web Skills</a>
+      <a href="SBandiera_A4_cloud_integration.html">Cloud Integration</a>
+      <a href="SBandiera_A4_networks.html">Computer Networks</a>
+    </nav>
+    
+    <!-- Internal links to sections of resume. Wrapper class referenced in print.css -->
+    <div class="notPrintFriendly">
+      <div class="subheading">Click to skip to:</div>
+      <ol>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#specialInterests">Special Interests</a></li>
+      </ol>
+    </div>
+    
+<!-- Table organising types of qualification into rows, and types of info into columns  -->
+
+    <table>
+      <thead>
+        <tr>
+          <th></th><th>Time Period</th><th>Institution</th><th>Qualification</th>
+        </tr>
+      </thead>
+      <tbody>
+<!-- 1st row: "Education" -->       
+        <tr>
+          <th id="educationCell" rowspan="3">Education</th><td>(2000-2005)</td><td>Sydney Grammar School</td><td>Year 12 Highschool Certificate</td>
+        </tr>
+        <tr>
+          <td>(2006)</td><td>TAFE</td><td>Certificate III Computer Skills</td>
+        </tr>
+        <tr>
+          <td>(2007-2009)</td><td>University of Technology Sydney</td><td>Bachelor of Information Technology, 
+            maj. Software and Application Development</td>
+        </tr>
+      </tbody>
+<!-- 2nd row: "Experience" -->
+      <tbody>
+        <tr>
+          <th id="experienceCell" rowspan="4">Experience</th><td>(2010)</td><td>TechSculpt Ventures</td><td>Internship</td>
+        </tr>
+        <tr>
+          <td>(2011)</td><td>Bytemancer Solutions</td><td>Junior Project Analysist</td>
+        </tr>
+        <tr>
+          <td>(2012-2014)</td><td>IBM</td><td>Assistant Project Manager</td>
+        </tr>
+        <tr>
+          <td>(2015-Present)</td><td>InnoV8</td><td>Self-Employed/Freelancer</td>
+        </tr>
+      </tbody>
+<!-- 3rd row: "Special Interests" -->        
+      <tbody>  
+        <tr>
+          <th id="specialInterestsCell">Special Interests</th>
+            <td colspan="3">
+              <ul>
+                <li>Personal application development</li>
+                <li>Fostering rescue dogs</li>
+                <li>Walking and camping along nature trails</li>
+                <li>The history of cinema</li>
+              </ul>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+       
+    <!-- Contact details rendered as external links in a footer -->
+    <footer>
+      <span>
+        "SB Logo" &copy; 2025 Steven Bandiera
+        <br>
+        All other images are personal property
+        <br>
+        of Steven Bandiera. All rights reserved.
+      </span>
+      <div>Contact Steven via:</div>
+      <ul>
+        <li>
+          <a href="tel:+123456789">Phone:</a>
+          <span> 0444 444 444</span>
+        </li>
+        <li>
+          <a href="mailto:sbandiera@gmail.com">Email:</a>
+          <span> sbandi03@gmail.com</span>
+        </li>
+      </ul>
+    </footer>
+    
+  </body>
+</html>
